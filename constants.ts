@@ -1,5 +1,5 @@
 import { DayMenu, Plan, MenuItem, Testimonial } from './types';
-import { Leaf, Award, Home, Truck, Heart } from 'lucide-react';
+import { Leaf, Award, Home, Truck } from 'lucide-react';
 
 export const NAV_LINKS = [
   { name: 'Home', href: '#home' },
