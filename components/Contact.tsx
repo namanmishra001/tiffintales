@@ -42,38 +42,54 @@ const Contact: React.FC = () => {
               Ready to subscribe or have a special request? We deliver from 10 AM to 10 PM. Reach out to us today!
             </p>
 
-            <div className="space-y-8">
-              <div className="flex items-start">
-                <div className="flex-shrink-0 w-12 h-12 bg-saffron-100 rounded-full flex items-center justify-center text-saffron-600">
+            <div className="space-y-6">
+              
+              {/* Phone - Clickable */}
+              <a 
+                href="tel:+16046187770"
+                className="flex items-start p-4 -ml-4 rounded-xl hover:bg-saffron-50 transition-all duration-300 group cursor-pointer active:scale-95"
+              >
+                <div className="flex-shrink-0 w-12 h-12 bg-saffron-100 rounded-full flex items-center justify-center text-saffron-600 group-hover:scale-110 group-hover:bg-saffron-200 transition-all duration-300 shadow-sm">
                   <Phone size={24} />
                 </div>
                 <div className="ml-6">
-                  <h3 className="text-lg font-bold text-gray-900">Phone</h3>
-                  <p className="text-gray-600">+1-604-618-7770</p>
+                  <h3 className="text-lg font-bold text-gray-900 group-hover:text-saffron-700 transition-colors">Phone</h3>
+                  <p className="text-gray-600 group-hover:text-gray-900">+1-604-618-7770</p>
                   <p className="text-sm text-gray-400">Available on WhatsApp</p>
                 </div>
-              </div>
+              </a>
 
-              <div className="flex items-start">
-                <div className="flex-shrink-0 w-12 h-12 bg-saffron-100 rounded-full flex items-center justify-center text-saffron-600">
+              {/* Email - Clickable */}
+              <a 
+                href="mailto:tiffintales.ca@gmail.com"
+                className="flex items-start p-4 -ml-4 rounded-xl hover:bg-saffron-50 transition-all duration-300 group cursor-pointer active:scale-95"
+              >
+                <div className="flex-shrink-0 w-12 h-12 bg-saffron-100 rounded-full flex items-center justify-center text-saffron-600 group-hover:scale-110 group-hover:bg-saffron-200 transition-all duration-300 shadow-sm">
                   <Mail size={24} />
                 </div>
                 <div className="ml-6">
-                  <h3 className="text-lg font-bold text-gray-900">Email</h3>
-                  <p className="text-gray-600">tiffintales.ca@gmail.com</p>
+                  <h3 className="text-lg font-bold text-gray-900 group-hover:text-saffron-700 transition-colors">Email</h3>
+                  <p className="text-gray-600 group-hover:text-gray-900">tiffintales.ca@gmail.com</p>
                 </div>
-              </div>
+              </a>
 
-              <div className="flex items-start">
-                <div className="flex-shrink-0 w-12 h-12 bg-saffron-100 rounded-full flex items-center justify-center text-saffron-600">
+              {/* Location - Clickable */}
+              <a 
+                href="https://www.google.com/maps/search/?api=1&query=155+St,+Surrey+BC,+V3S+3P3" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="flex items-start p-4 -ml-4 rounded-xl hover:bg-saffron-50 transition-all duration-300 group cursor-pointer active:scale-95"
+              >
+                <div className="flex-shrink-0 w-12 h-12 bg-saffron-100 rounded-full flex items-center justify-center text-saffron-600 group-hover:scale-110 group-hover:bg-saffron-200 transition-all duration-300 shadow-sm">
                   <MapPin size={24} />
                 </div>
                 <div className="ml-6">
-                  <h3 className="text-lg font-bold text-gray-900">Service Area</h3>
-                  <p className="text-gray-600">Fleetwood, Surrey, BC</p>
-                  <p className="text-sm text-gray-400">Delivering to surrounding areas</p>
+                  <h3 className="text-lg font-bold text-gray-900 group-hover:text-saffron-700 transition-colors">Service Area</h3>
+                  <p className="text-gray-600 group-hover:text-gray-900">Fleetwood, Surrey, BC</p>
+                  <p className="text-sm text-gray-400 group-hover:text-gray-500">155 St, Surrey BC, V3S 3P3</p>
                 </div>
-              </div>
+              </a>
+
             </div>
           </div>
 
@@ -88,7 +104,7 @@ const Contact: React.FC = () => {
                   id="name"
                   required
                   className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-saffron-500 focus:border-transparent transition-all outline-none"
-                  placeholder="John Doe"
+                  placeholder="The Cool Dude"
                   value={formData.name}
                   onChange={(e) => setFormData({ ...formData, name: e.target.value })}
                 />
@@ -121,7 +137,7 @@ const Contact: React.FC = () => {
 
               <button
                 type="submit"
-                className="w-full bg-saffron-600 text-white font-bold py-4 rounded-lg hover:bg-saffron-700 transition-colors flex items-center justify-center gap-2 shadow-lg shadow-saffron-500/20"
+                className="w-full bg-saffron-600 text-white font-bold py-4 rounded-lg hover:bg-saffron-700 transition-colors flex items-center justify-center gap-2 shadow-lg shadow-saffron-500/20 active:scale-95 transform duration-150"
               >
                 Send Message via WhatsApp <Send size={18} />
               </button>

@@ -21,7 +21,7 @@ const GALLERY_IMAGES = [
   },
   {
     src: "https://images.unsplash.com/photo-1589302168068-964664d93dc0?q=80&w=800",
-    alt: "Creamy Dal Makhani",
+    alt: "Flavory Biryani",
     category: "Daily Staple",
     className: "md:col-span-2 md:row-span-1"
   }
