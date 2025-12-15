@@ -3,8 +3,9 @@ import { Leaf, Award, Home, Truck, Heart } from 'lucide-react';
 
 export const NAV_LINKS = [
   { name: 'Home', href: '#home' },
-  { name: 'Menu', href: '#menu' },
   { name: 'Plans', href: '#plans' },
+  { name: 'Menu', href: '#menu' },
+  { name: 'Gallery', href: '#gallery' },
   { name: 'How It Works', href: '#how-it-works' },
   { name: 'Contact', href: '#contact' },
 ];

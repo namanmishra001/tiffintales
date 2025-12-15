@@ -29,12 +29,15 @@ const Navbar: React.FC = () => {
         <div className="flex justify-between items-center">
           {/* Logo */}
           <div className="flex-shrink-0 flex items-center">
-            <div className="flex flex-col items-center justify-center bg-white rounded-full h-12 w-12 border-2 border-saffron-600 mr-2 shadow-sm">
-                 <span className="text-xl">👩‍🍳</span>
-            </div>
-            <div>
-                <h1 className="font-serif text-2xl font-bold text-gray-900 tracking-tight">Tiffin Tales</h1>
-                <p className="text-[10px] uppercase tracking-widest text-saffron-600 font-bold">Pure Veg</p>
+            {/* Using a reliable hosted URL for the chef icon since local files aren't accessible */}
+            <img 
+              src="https://cdn-icons-png.flaticon.com/512/4086/4086577.png" 
+              alt="Tiffin Tales Logo" 
+              className="h-16 w-16 rounded-full border-2 border-gray-900 mr-3 shadow-sm bg-white p-1 object-contain"
+            />
+            <div className="flex flex-col">
+                <h1 className="font-serif text-2xl font-bold text-gray-900 tracking-tight leading-none">Tiffin Tales</h1>
+                <p className="text-[10px] uppercase tracking-widest text-saffron-600 font-bold mt-1">Pure Veg</p>
             </div>
           </div>
 
@@ -73,9 +76,11 @@ const Navbar: React.FC = () => {
           {/* Header */}
           <div className="flex justify-between items-center p-4 border-b border-gray-100 bg-saffron-50/50">
              <div className="flex items-center">
-                <div className="flex flex-col items-center justify-center bg-white rounded-full h-10 w-10 border-2 border-saffron-600 mr-3 shadow-sm">
-                   <span className="text-xl">👩‍🍳</span>
-                </div>
+                <img 
+                  src="https://cdn-icons-png.flaticon.com/512/4086/4086577.png" 
+                  alt="Tiffin Tales Logo" 
+                  className="h-12 w-12 rounded-full border-2 border-gray-900 mr-3 shadow-sm bg-white p-1 object-contain"
+                />
                 <div className="flex flex-col">
                     <span className="font-serif text-xl font-bold text-gray-900 leading-none">Tiffin Tales</span>
                     <span className="text-[10px] font-bold text-saffron-600 tracking-widest uppercase mt-0.5">Pure Veg</span>
