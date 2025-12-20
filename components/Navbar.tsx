@@ -31,7 +31,7 @@ const Navbar: React.FC = () => {
           <div className="flex-shrink-0 flex items-center">
             {/* Using a reliable hosted URL for the chef icon since local files aren't accessible */}
             <img 
-              src="https://cdn-icons-png.flaticon.com/512/4086/4086577.png" 
+              src="https://raw.githubusercontent.com/namanmishra001/website/main/DD17B34F-78CE-4D94-931E-D22F70DA93B4.jpeg" 
               alt="Tiffin Tales Logo" 
               className="h-16 w-16 rounded-full border-2 border-gray-900 mr-3 shadow-sm bg-white p-1 object-contain"
             />

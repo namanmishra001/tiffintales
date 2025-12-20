@@ -25,4 +25,7 @@ export interface Testimonial {
   location: string;
   text: string;
   rating: number;
+  image?: string;
+  source?: 'google' | 'local';
+  date?: string;
 }
