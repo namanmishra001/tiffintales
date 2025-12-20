@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { PLANS, WEEKLY_MENU, HEALTHY_BOWLS, WEEKEND_SPECIALS } from '../constants';
-import { Check, Calendar } from 'lucide-react';
+import { Check, Calendar, Sunrise, Coffee } from 'lucide-react';
 
 const Menu: React.FC = () => {
   const [activeTab, setActiveTab] = useState<'plans' | 'weekly' | 'bowls'>('plans');
@@ -196,6 +196,52 @@ const Menu: React.FC = () => {
             </div>
           )}
         </div>
+
+        {/* BREAKFAST SECTION - NEW */}
+        <div className="mt-20 border-t border-gray-100 pt-16">
+            <div className="relative rounded-3xl overflow-hidden bg-gradient-to-br from-saffron-50 to-orange-50 border border-saffron-100 p-8 md:p-12">
+                {/* Decorative background elements */}
+                <div className="absolute top-0 right-0 w-64 h-64 bg-yellow-200 rounded-full blur-3xl opacity-20 -mr-16 -mt-16 pointer-events-none"></div>
+                <div className="absolute bottom-0 left-0 w-48 h-48 bg-orange-200 rounded-full blur-3xl opacity-20 -ml-16 -mb-16 pointer-events-none"></div>
+                
+                <div className="relative z-10 grid md:grid-cols-3 gap-8 items-center">
+                    <div className="md:col-span-2">
+                        <div className="inline-flex items-center gap-2 px-3 py-1 bg-white rounded-full border border-saffron-200 text-saffron-600 text-xs font-bold uppercase tracking-widest mb-4 shadow-sm">
+                            <Sunrise size={14} />
+                            Coming Soon
+                        </div>
+                        <h3 className="text-3xl md:text-4xl font-serif font-bold text-gray-900 mb-4">
+                            Breakfast Delivered at 7 AM
+                        </h3>
+                        <p className="text-gray-600 text-lg leading-relaxed mb-6">
+                            Start your morning with a wholesome, home-cooked Indian breakfast. 
+                            We are bringing Poha, Upma, Aloo Paratha, and Chai straight to your doorstep before you start your day.
+                        </p>
+                        <div className="flex flex-wrap gap-4">
+                            <div className="flex items-center gap-2 text-sm font-semibold text-gray-700 bg-white/60 px-4 py-2 rounded-lg">
+                                <span className="w-2 h-2 rounded-full bg-veggreen-500"></span> Pure Veg
+                            </div>
+                            <div className="flex items-center gap-2 text-sm font-semibold text-gray-700 bg-white/60 px-4 py-2 rounded-lg">
+                                <span className="w-2 h-2 rounded-full bg-veggreen-500"></span> Hot Delivery
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div className="md:col-span-1 flex justify-center md:justify-end">
+                        <div className="relative">
+                            <div className="bg-white p-6 rounded-2xl shadow-xl border-4 border-white transform rotate-3 hover:rotate-0 transition-transform duration-500">
+                                <Coffee size={64} className="text-saffron-600 mx-auto mb-2" strokeWidth={1.5} />
+                                <div className="text-center">
+                                    <p className="font-serif font-bold text-xl text-gray-800">Morning Menu</p>
+                                    <p className="text-xs text-gray-500 uppercase tracking-wide mt-1">Launching Soon</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
       </div>
     </section>
   );
