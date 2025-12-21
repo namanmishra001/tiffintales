@@ -5,6 +5,7 @@ export const NAV_LINKS = [
   { name: 'Home', href: '#home' },
   { name: 'Plans', href: '#plans' },
   { name: 'Menu', href: '#menu' },
+  { name: 'Plan Budget', href: '#price-estimator' },
   { name: 'Gallery', href: '#gallery' },
   { name: 'How It Works', href: '#how-it-works' },
   { name: 'Contact', href: '#contact' },

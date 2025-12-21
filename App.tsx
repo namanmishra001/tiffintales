@@ -7,6 +7,7 @@ import WhyChooseUs from './components/WhyChooseUs';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 import DevelopmentPopup from './components/DevelopmentPopup';
+import PriceEstimator from './components/PriceEstimator';
 
 const App: React.FC = () => {
   return (
@@ -17,6 +18,7 @@ const App: React.FC = () => {
         <Hero />
         <WhyChooseUs />
         <Menu />
+        <PriceEstimator />
         <Gallery />
         <Contact />
       </main>
