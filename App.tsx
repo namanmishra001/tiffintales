@@ -8,6 +8,8 @@ import Contact from './components/Contact';
 import Footer from './components/Footer';
 import DevelopmentPopup from './components/DevelopmentPopup';
 import PriceEstimator from './components/PriceEstimator';
+import BreakfastTeaser from './components/BreakfastTeaser';
+import Testimonials from './components/Testimonials';
 
 const App: React.FC = () => {
   return (
@@ -16,10 +18,12 @@ const App: React.FC = () => {
       <DevelopmentPopup />
       <main>
         <Hero />
+        <BreakfastTeaser />
         <WhyChooseUs />
         <Menu />
         <PriceEstimator />
         <Gallery />
+        <Testimonials />
         <Contact />
       </main>
       <Footer />
