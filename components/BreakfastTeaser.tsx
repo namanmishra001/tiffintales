@@ -1,5 +1,5 @@
 import React from 'react';
-import { Sunrise, Coffee, Sparkles, Clock, ArrowRight } from 'lucide-react';
+import { Sunrise, Coffee, Sparkles, Clock } from 'lucide-react';
 
 const BreakfastTeaser: React.FC = () => {
   return (
