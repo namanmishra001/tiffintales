@@ -44,7 +44,7 @@ const BreakfastTeaser: React.FC = () => {
                     </div>
                     <div className="flex items-center gap-2 text-sm font-semibold text-gray-800 bg-white px-5 py-3 rounded-xl border border-saffron-100 shadow-sm transition-transform hover:scale-105">
                         <Clock size={18} className="text-orange-500" /> 
-                        7:00 AM - 9:00 AM
+                        7:00 AM to 9:00 AM
                     </div>
                 </div>
             </div>
