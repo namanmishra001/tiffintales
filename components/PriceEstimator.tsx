@@ -156,7 +156,7 @@ const PriceEstimator: React.FC = () => {
           1: { halign: 'center' }
         },
         // Styling for summary rows (last 3 rows)
-        didParseCell: function(data) {
+        didParseCell: function(data: any) {
           const rowCount = tableBody.length;
           if (data.row.index >= rowCount - 3) {
              data.cell.styles.fontStyle = 'bold';
